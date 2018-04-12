@@ -8,6 +8,7 @@
  xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation"
  xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib"
  xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib"
+ xmlns:ui="http://schemas.uipath.com/workflow/activities"
  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -58,18 +59,38 @@
       <Variable x:TypeArguments="x:String" Name="passwordStr" />
     </Flowchart.Variables>
     <Flowchart.StartNode>
-      <x:Null />
+      <FlowStep x:Name="__ReferenceID0">
+        <ui:GetSecureCredential Password="{x:Null}" Target="{x:Null}" Username="{x:Null}" CredentialType="Generic" DisplayName="Get secure credential" PersistanceType="Enterprise" sap2010:WorkflowViewState.IdRef="GetSecureCredential_2" />
+        <sap2010:WorkflowViewState.IdRef>FlowStep_4</sap2010:WorkflowViewState.IdRef>
+      </FlowStep>
     </Flowchart.StartNode>
-    <sads:DebugSymbol.Symbol>dzFDOlxVc2Vyc1xWaXNhZ2lvXERvY3VtZW50c1xVaVBhdGhcdGVzdGVcTWFpbi54YW1sATgDQA8CAQE=</sads:DebugSymbol.Symbol>
+    <x:Reference>__ReferenceID0</x:Reference>
+    <sads:DebugSymbol.Symbol>dzFDOlxVc2Vyc1xWaXNhZ2lvXERvY3VtZW50c1xVaVBhdGhcdGVzdGVcTWFpbi54YW1sAjkDRQ8CAQE/CT/vAQIBAg==</sads:DebugSymbol.Symbol>
   </Flowchart>
   <sap2010:WorkflowViewState.ViewStateManager>
     <sap2010:ViewStateManager>
+      <sap2010:ViewStateData Id="GetSecureCredential_2" sap:VirtualizedContainerService.HintSize="200,22">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="FlowStep_4">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <av:Point x:Key="ShapeLocation">300,127.5</av:Point>
+            <av:Size x:Key="ShapeSize">200,22</av:Size>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
       <sap2010:ViewStateData Id="Flowchart_1" sap:VirtualizedContainerService.HintSize="614,636">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
             <av:Point x:Key="ShapeLocation">270,2.5</av:Point>
             <av:Size x:Key="ShapeSize">60,75</av:Size>
+            <av:PointCollection x:Key="ConnectorLocation">300,77.5 300,107.5 400,107.5 400,127.5</av:PointCollection>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
